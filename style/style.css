@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: sans-serif; }
+
+h1 {
+  margin: 100px 0; }
+
+h2 {
+  padding: 25px; }
+
+h3 {
+  padding: 50px; }
+
+ul {
+  list-style-type: none; }
+
+button {
+  padding: 15px 50px;
+  background-color: transparent;
+  cursor: pointer; }
+
+header, section:not(#about) {
+  padding: 0 10%; }
+
+section:nth-child(2), section:nth-child(3), section:nth-child(4) {
+  margin-bottom: 100px; }
+
+header {
+  width: 100%;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #fff; }
+  header #logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    header #logo img {
+      margin: 10px; }
+    header #logo div {
+      font-size: 22px; }
+  header ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    header ul li {
+      margin: 10px; }
+    header ul a {
+      color: #fff;
+      text-decoration: none; }
+
+#index {
+  color: #fff;
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(black), to(#02488E));
+  background: linear-gradient(black, #02488E);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  #index button {
+    color: #fff;
+    border: 1px solid #fff; }
+
+#stock {
+  text-align: center; }
+  #stock > div {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 50px; }
+    #stock > div img {
+      justify-self: center; }
+  #stock a {
+    color: #2C82F2; }
+
+#about {
+  color: #fff;
+  text-align: center;
+  background-image: url("../img/green1-back.jpg"); }
+  #about > div {
+    padding: 100px 10%;
+    background-color: rgba(95, 133, 238, 0.55); }
+
+#goods {
+  padding: 25px; }
+  #goods .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px; }
+    #goods .cards .card {
+      -webkit-box-shadow: 0px 3px 10px -5px #000;
+      box-shadow: 0px 3px 10px -5px #000; }
+      #goods .cards .card .card-header img {
+        width: 100%; }
+      #goods .cards .card .card-body, #goods .cards .card .card-footer {
+        padding: 10px; }
+      #goods .cards .card .card-body {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between; }
+      #goods .cards .card .card-footer {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center; }
+        #goods .cards .card .card-footer button {
+          color: #fff;
+          background-color: #064687;
+          border: none; }
+
+#promo-kod {
+  color: #fff;
+  background: -webkit-gradient(linear, left top, left bottom, from(#02488E), to(#272727));
+  background: linear-gradient(#02488E, #272727); }
+  #promo-kod h2, #promo-kod h3 {
+    text-align: center; }
+  #promo-kod > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+    #promo-kod > div > div {
+      -ms-flex-item-align: center;
+      align-self: center; }
+    #promo-kod > div img {
+      width: 100%; }
+  #promo-kod form {
+    height: 100%;
+    padding: 0 5%; }
+    #promo-kod form input {
+      padding: 10px;
+      background-color: transparent;
+      border: none;
+      border-bottom: 2px solid #fff; }
+    #promo-kod form div {
+      display: grid;
+      margin: 25px; }
+  #promo-kod button {
+    color: #fff;
+    border: 2px solid #fff; }
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 20px;
+  color: #fff;
+  background-color: #272727; }
